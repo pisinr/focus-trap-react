@@ -13,6 +13,11 @@
 <body>
   <h1 tabindex="0">focus-trap-react demo</h1>
 
+  <p>
+    <span style="font-size:2em;vertical-align:middle;">☜</span>
+    <a href="https://github.com/davidtheclark/focus-trap-react" style="vertical-align:middle;">Return to the repository</a>
+  </p>
+
   <h2>demo one</h2>
   <p>
     Default behavior: When this FocusTrap mounts (and activates), the first element in its tab order receives focus.
@@ -23,15 +28,22 @@
   <p>
     When this FocusTrap mounts (and activates), focus jumps to a specific, manually specified element.
   </p>
+  <p>
+    Also, the Escape key does not deactivate this trap: you have to click the button to deactivate.
+  </p>
   <div id="demo-two"></div>
 
   <h2>demo three</h2>
   <p>
     Inspect this element and you'll see that is not the default plan div,
-    but rather a section tag with an id, a class, and inline styles.
+    but rather a section tag with an id, a class, inline styles, and an
+    arbitrary <code>data-</code>attribute.
   </p>
   <p>
     Also, this FocusTrap activates and deactivates while staying mounted.
+  </p>
+  <p>
+    ALSO, when you click outside this FocusTrap, the trap deactivates and your click carries through.
   </p>
   <div id="demo-three"></div>
 
@@ -42,6 +54,11 @@
     <em>but because of positive tabindex attributes the tab order is not the same as the source order</em>.
   </p>
   <div id="demo-four"></div>
+
+  <p>
+    <span style="font-size:2em;vertical-align:middle;">☜</span>
+    <a href="https://github.com/davidtheclark/focus-trap-react" style="vertical-align:middle;">Return to the repository</a>
+  </p>
 
   <script src="demo-bundle.js"></script>
 </body>

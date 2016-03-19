@@ -114,6 +114,18 @@ pass **a selector identifying the element that should receive initial focus** wh
 
 See `demo/demo-two.jsx`.
 
+### escapeDeactivates
+
+Type: `Boolean`, Default: true
+
+If `false`, the Escape key will not trigger deactivation of the focus trap. This can be useful if you want to force the user to make a decision instead of allowing an easy way out.
+
+### clickOutsideDeactivates
+
+Type: Boolean, Default: false
+
+If `true`, a click outside the focus trap will deactivate the focus trap and allow the click event to carry on.
+
 #### active
 
 Type: `Boolean`, optional
@@ -122,29 +134,15 @@ By default, the `FocusTrap` activates when it mounts. So you activate and deacti
 
 See `demo/demo-three.jsx`.
 
-#### className
-
-Type: `String`, optional
-
-A `className` for the `FocusTrap`'s DOM node.
-
-#### id
-
-Type: `String`, optional
-
-An `id` for the `FocusTrap`'s DOM node.
-
 #### tag
 
-Type: `String`, Default: `'div'`, optional
+Type: `String`, Default: `div`, optional
 
-An HTML tag for the `FocusTrap`'s DOM node.
+An HTML tag for the FocusTrap's DOM node.
 
-#### style
+#### additional props
 
-Type: `Object`, optional
-
-An inline style object ([in React fashion](https://facebook.github.io/react/tips/inline-styles.html)) for the `FocusTrap`'s DOM node.
+All props not mentioned above are passed directly to the `<div>` element. This means that you can pass `id`, `className`, `style`, `aria-`attributes, `data-`attributes, or any other arbitrary property that you want to use to customize the element.
 
 ## Contributing & Development
 
