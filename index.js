@@ -47,7 +47,7 @@ var FocusTrap = React.createClass({
       initialFocus: this.props.initialFocus,
       escapeDeactivates: this.props.escapeDeactivates,
       clickOutsideDeactivates: this.props.clickOutsideDeactivates,
-      tabMode: this.propMode.tabMode,
+      tabMode: this.props.tabMode,
     });
   },
 
