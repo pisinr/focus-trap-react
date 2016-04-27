@@ -8,6 +8,7 @@ var checkedProps = {
   clickOutsideDeactivates: PropTypes.bool,
   active: PropTypes.bool,
   initialFocus: PropTypes.string,
+  tabMode: PropTypes.string,
   tag: PropTypes.string,
 };
 
@@ -46,6 +47,7 @@ var FocusTrap = React.createClass({
       initialFocus: this.props.initialFocus,
       escapeDeactivates: this.props.escapeDeactivates,
       clickOutsideDeactivates: this.props.clickOutsideDeactivates,
+      tabMode: this.propMode.tabMode,
     });
   },
 
