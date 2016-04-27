@@ -47,7 +47,7 @@
     "zuul": "3.10.1"
   },
   "dependencies": {
-    "focus-trap": "^1.1.0"
+    "focus-trap": "git://github.com/pisinr/focus-trap.git"
   },
   "peerDependencies": {
     "react": "0.14.x || ^15.0.0",
